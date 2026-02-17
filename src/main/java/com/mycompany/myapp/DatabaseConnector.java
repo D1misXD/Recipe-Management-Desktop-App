@@ -9,11 +9,11 @@ public class DatabaseConnector {
     Connection conn;
     PreparedStatement pst;
     PreparedStatement pst2;
-    public void Connect() {
+    public void Connect() { 
         try {
-            String url = "jdbc:mysql://HOST:PORT/DATABASE"; 
+            String url = "jdbc:mysql://HOST:PORT/DATABASE";                     //Your DataBase
             String user = "root";
-            String password = "your_DataBase_Password";
+            String password = "your_DataBase_Password";                         //Your DataBase Password
             
             conn = DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
@@ -21,7 +21,7 @@ public class DatabaseConnector {
         }
     }
     
-    boolean validateLogin(String usern, String pass) {
+    boolean validateLogin(String usern, String pass) {                          //Func Connecting the User
         try {
             String sql = "SELECT Username,pass FROM Userinfo WHERE Username = ? AND pass = ?";
 
@@ -39,7 +39,7 @@ public class DatabaseConnector {
         }
     }
     
-    public void setInfo(){
+    public void setInfo(){                                                       //Func Setting Info of User's Account
         String username = Session.getUsername();
         try {
             String sql = "SELECT * FROM Userinfo u JOIN Location l ON u.City_FK = l.City_N "
@@ -72,7 +72,7 @@ public class DatabaseConnector {
         }
     }
     
-    public boolean updateSettings(String email, 
+    public boolean updateSettings(String email,                 //Func When user wants to update their Info
                                String F_N, 
                                String L_N, 
                                String phone, 
@@ -318,4 +318,5 @@ public class DatabaseConnector {
             new Alert(Alert.AlertType.WARNING, "Something went wrong!").show();
         }
     }
+
 }
