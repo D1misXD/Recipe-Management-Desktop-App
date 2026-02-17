@@ -15,8 +15,7 @@ Desktop Recipe Management App built with Java, JavaFX, Scene Builder, CSS, and M
 <img src="Visual_Preview/Login.gif" width="500" height="400"> <img src="Visual_Preview/Profile.gif" width="500" height="400"> 
 <img src="Visual_Preview/Recipes.png" width="500" height="400"> <img src="Visual_Preview/Settings.png" width="500" height="400">
 
-## Technologies Used
-
+🧰 **Technologies Used**
 - **Java**
 - **JavaFX** (for UI)
 - **Scene Builder** (for FXML layout design)
