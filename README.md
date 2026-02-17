@@ -3,7 +3,10 @@ A desktop application for creating, managing, and organizing personal recipes wi
 
 Built as a university project to demonstrate full-stack Java desktop development skills: **JavaFX**,**CSS** and **SceneBuilder** for GUI, **MySQL** database integration, **CRUD** operations, user authentication, and personalized data handling.
 
-![Login to Home](VisualPreview/Login.gif)
+  
+<img src="Visual_Preview/Login.gif" width="500" height="400"> <img src="Visual_Preview/Profile.gif" width="500" height="400"> 
+<img src="Visual_Preview/Recipes.png" width="500" height="400"> <img src="Visual_Preview/Settings.png" width="500" height="400">
+
 
 ⭐ **Features**
 - **User Accounts** — Registration, login, secure session management
