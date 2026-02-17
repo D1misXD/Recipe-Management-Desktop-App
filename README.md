@@ -9,7 +9,7 @@ Built as a university project to demonstrate full-stack Java desktop development
 
 
 ⭐ **Features**
-- **User Accounts** — Registration, login, secure session management
+- **User Accounts** — Registration, login, session management
 - **Personalized Profiles** — Each user has their own private recipe collection
 - **Recipe CRUD** — Create, read, update, delete recipes with full database support
 - **Search & Filter** — Find recipes by title, ingredients, category, etc.
