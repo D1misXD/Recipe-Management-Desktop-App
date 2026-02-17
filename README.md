@@ -3,6 +3,8 @@ A desktop application for creating, managing, and organizing personal recipes wi
 
 Built as a university project to demonstrate full-stack Java desktop development skills: **JavaFX**,**CSS** and **SceneBuilder** for GUI, **MySQL** database integration, **CRUD** operations, user authentication, and personalized data handling.
 
+![Login to Home](VisualPreview/Login.gif)
+
 ⭐ **Features**
 - **User Accounts** — Registration, login, secure session management
 - **Personalized Profiles** — Each user has their own private recipe collection
