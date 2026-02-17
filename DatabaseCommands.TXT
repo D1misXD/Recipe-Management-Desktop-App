@@ -1,0 +1,75 @@
+CREATE TABLE Countries (
+	Country_Name VARCHAR(50) PRIMARY KEY,
+    Country_URL VARCHAR(250) NOT NULL
+);
+
+CREATE TABLE Location (
+	City_N varchar(50) PRIMARY KEY,
+    Country varchar(50) NOT NULL,
+    FOREIGN KEY (Country) REFERENCES Countries(Country_Name)
+);
+
+CREATE TABLE Userinfo (
+	USER_ID INT AUTO_INCREMENT PRIMARY KEY,
+	Username varchar(50) NOT NULL UNIQUE,
+    Pass varchar(255) NOT NULL,
+    Email varchar(100) NOT NULL UNIQUE,
+    First_Name varchar(50) NOT NULL,
+    Last_Name varchar(50) NOT NULL,
+    Phone varchar(11) UNIQUE,
+    Age DATE NOT NULL,
+    Gender varchar(10),
+    Recipe_Count INT,
+    City_FK VARCHAR(50) NOT NULL,
+    User_URL VARCHAR(250) NOT NULL,
+	FOREIGN KEY (City_FK) REFERENCES Location(City_N),
+    CHECK( Phone REGEXP '^[0-9]{10}$'),
+    CHECK( Email REGEXP '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'),
+    CHECK( Gender = 'Male' or Gender = 'Female' or Gender = 'Other')
+);
+
+CREATE TABLE Recipes (
+	RECIPE_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Recipe_Name VARCHAR(50) NOT NULL UNIQUE,
+    Ingredient_Count INT NOT NULL,
+    Calories INT NOT NULL,
+    Category VARCHAR(25) NOT NULL,
+    Difficulty VARCHAR(10) NOT NULL,
+    Descript VARCHAR(300) NOT NULL,
+    Recipe_URL VARCHAR(250) NOT NULL,
+    User_Id INT NOT NULL,
+    FOREIGN KEY (User_Id) REFERENCES Userinfo(USER_ID)
+);
+
+INSERT INTO Countries()
+VALUES ("Germany","/icons8-germany-48.png");
+
+INSERT INTO Countries()
+VALUES ("France","/icons8-france-48.png");
+
+INSERT INTO Countries()
+VALUES ("UK","/icons8-uk-48.png");
+
+INSERT INTO Countries()
+VALUES ("USA","/icons8-america-48.png");
+
+INSERT INTO Countries()
+VALUES ("Greece","/icons8-greece-48.png");
+
+INSERT INTO Countries()
+VALUES ("Russia","/icons8-russia-48.png");
+
+INSERT INTO location (City_N,Country)
+VALUES ("Paris","France");
+
+INSERT INTO location (City_N,Country)
+VALUES ("Washington","USA");
+
+INSERT INTO location (City_N,Country)
+VALUES ("London","UK");
+
+INSERT INTO location (City_N,Country)
+VALUES ("Athens","Greece");
+
+INSERT INTO location (City_N,Country)
+VALUES ("Moscow","Russia");
