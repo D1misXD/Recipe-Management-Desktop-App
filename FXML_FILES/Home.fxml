@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainM" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.myapp.HomeController">
+   <children>
+      <VBox fx:id="lolxd" layoutX="9.0" prefHeight="413.0" prefWidth="300.0">
+         <children>
+            <AnchorPane />
+            <Pane fx:id="paneD" prefHeight="107.0" prefWidth="307.0">
+               <children>
+                  <Button fx:id="forwardsB" layoutX="251.0" layoutY="36.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="30.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-back-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="backwardsB" layoutX="211.0" layoutY="36.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="30.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-forward-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="profileB" alignment="BASELINE_LEFT" layoutY="14.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="205.0" text=" D1mis">
+                     <graphic>
+                        <Circle fx:id="cim" radius="37.0" stroke="WHITE" strokeType="INSIDE" />
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Button fx:id="menub" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="57.0" prefWidth="289.0" style="-fx-font-weight: bold;" text="Home">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-home-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="recipeb" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Recipes" prefHeight="57.0" prefWidth="289.0" text="Recipes">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="button-graphic">
+                     <image>
+                        <Image url="@icons8-cookbook-50%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="accountb" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Account" prefHeight="57.0" prefWidth="289.0" text="Account">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@userout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="settingsb" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Settings" prefHeight="57.0" prefWidth="289.0" text="Settings">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="search" layoutX="308.0" layoutY="-1.0" prefHeight="720.0" prefWidth="972.0">
+         <children>
+            <Pane fx:id="homeBack" layoutX="1.0" layoutY="374.0" prefHeight="346.0" prefWidth="972.0">
+               <children>
+                  <GridPane layoutX="196.0" layoutY="43.0" prefHeight="250.0" prefWidth="562.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="194.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="181.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="195.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="82.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="64.0" minHeight="1.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelHome2" prefHeight="31.0" prefWidth="196.0" text="Browse Recipes">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Categories" textFill="#949393" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Hyperlink fx:id="homeLabel" text="Pork" GridPane.rowIndex="2" />
+                        <Hyperlink fx:id="homeLabel" text="Beef" GridPane.rowIndex="3" />
+                        <Hyperlink fx:id="homeLabel" text="Chicken" GridPane.rowIndex="4" />
+                        <Hyperlink fx:id="homeLabel" text="All Categories" GridPane.rowIndex="5" />
+                        <Label text="Cousine" textFill="#949393" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Hyperlink fx:id="homeLabel" text="Greek" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Hyperlink fx:id="homeLabel" text="All Cousines" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Hyperlink fx:id="homeLabel" text="Italian" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Hyperlink fx:id="homeLabel" text="Japanese" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Occasion" textFill="#949393" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Hyperlink fx:id="homeLabel" text="Birthday" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Hyperlink fx:id="homeLabel" text="Dinner Party" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Hyperlink fx:id="homeLabel" text="Picnic" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Hyperlink fx:id="homeLabel" text="All occasions" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+            <Label layoutX="83.0" layoutY="161.0" text="Something something" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="homeImage" fitHeight="385.0" fitWidth="972.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sedond.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="homeSearch" layoutX="163.0" layoutY="335.0" prefHeight="79.0" prefWidth="547.0" promptText="Search Recipes">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="homeS" contentDisplay="RIGHT" layoutX="710.0" layoutY="345.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="183.0" text="Surprise me">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-right-arrow.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="label1" layoutX="50.0" layoutY="78.0" text="Best Recipes" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="label2" layoutX="14.0" layoutY="125.0" text="Around The World" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="8.0" layoutY="649.0" prefHeight="65.0" prefWidth="300.0">
+         <children>
+            <MenuButton fx:id="menub1" mnemonicParsing="false" popupSide="TOP" prefHeight="57.0" prefWidth="289.0" text="More" textFill="WHITE">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#Logout" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-logout-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+              </items>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@menubar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainM" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.myapp.SettingsController">
+   <children>
+      <VBox fx:id="lolxd" layoutX="9.0" prefHeight="413.0" prefWidth="300.0">
+         <children>
+            <AnchorPane />
+            <Pane fx:id="paneD" prefHeight="107.0" prefWidth="307.0">
+               <children>
+                  <Button fx:id="forwardsB" layoutX="251.0" layoutY="36.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="30.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-back-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="backwardsB" layoutX="211.0" layoutY="36.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="30.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-forward-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="profileB" alignment="BASELINE_LEFT" layoutY="14.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="205.0" text="hehe">
+                     <graphic>
+                        <Circle fx:id="cim" radius="37.0" stroke="WHITE" strokeType="INSIDE" />
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Button fx:id="menub" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Home" prefHeight="57.0" prefWidth="289.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-home-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="recipeb" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Recipes" prefHeight="57.0" prefWidth="289.0" text="Recipes">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="button-graphic">
+                     <image>
+                        <Image url="@icons8-cookbook-50%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="accountb" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Account" prefHeight="57.0" prefWidth="289.0" text="Account">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@userout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="settingsb" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Settings" prefHeight="57.0" prefWidth="289.0" style="-fx-font-weight: bold;" text="Settings">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-settings-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="search" layoutX="308.0" prefHeight="720.0" prefWidth="978.0">
+         <children>
+            <GridPane fx:id="gridUser" layoutX="29.0" layoutY="84.0" prefHeight="242.0" prefWidth="914.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0" prefWidth="407.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0" prefWidth="71.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0" prefWidth="407.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="Last_N" prefHeight="25.0" prefWidth="396.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="Last Name" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="First_N" prefHeight="25.0" prefWidth="396.0" GridPane.rowIndex="1" />
+                  <Label text="First Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Email" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Phone Number" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="email_T" prefHeight="25.0" prefWidth="396.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="phone_T" prefHeight="25.0" prefWidth="396.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label text="Current Password" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="New Password" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="current_P" prefHeight="14.0" prefWidth="402.0" promptText="**********" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font></PasswordField>
+                  <PasswordField fx:id="new_P" promptText="**********" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font></PasswordField>
+               </children>
+            </GridPane>
+            <Label layoutX="29.0" layoutY="42.0" prefHeight="27.0" prefWidth="170.0" text="Account Info">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="gridUser1" layoutX="29.0" layoutY="389.0" prefHeight="197.0" prefWidth="914.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0" prefWidth="407.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0" prefWidth="71.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0" prefWidth="407.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="city_T" prefHeight="13.0" prefWidth="403.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label text="City" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Country">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Gender" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Age" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="countryS" mnemonicParsing="false" prefHeight="25.0" prefWidth="435.0" GridPane.rowIndex="1">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="France" />
+                        <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="Germany" />
+                        <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="Greece" />
+                        <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="Russia" />
+                        <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="UK" />
+                        <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="USA" />
+                    </items>
+                     <graphic>
+                        <ImageView fx:id="image_Country" fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="genderS" mnemonicParsing="false" onAction="#countryGender" prefHeight="25.0" prefWidth="455.0" GridPane.rowIndex="3">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#countryGender" text="Male" />
+                      <MenuItem mnemonicParsing="false" onAction="#countryGender" text="Female" />
+                        <MenuItem mnemonicParsing="false" onAction="#countryGender" text="Other" />
+                    </items>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </MenuButton>
+                  <DatePicker fx:id="age_T" prefHeight="13.0" prefWidth="403.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Label layoutX="29.0" layoutY="347.0" prefHeight="27.0" prefWidth="170.0" text="About You">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveB" layoutX="795.0" layoutY="632.0" mnemonicParsing="false" onAction="#save" prefHeight="44.0" prefWidth="148.0" text="Save" />
+            <Label fx:id="saveL" layoutX="673.0" layoutY="645.0" text="Changes Saved!" textFill="#549435" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="saveR" layoutX="630.0" layoutY="645.0" text="Changes did not Save!" textFill="RED" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="8.0" layoutY="649.0" prefHeight="65.0" prefWidth="300.0">
+         <children>
+            <MenuButton fx:id="menub1" mnemonicParsing="false" popupSide="TOP" prefHeight="57.0" prefWidth="289.0" text="More" textFill="WHITE">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#Logout" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-logout-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+              </items>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@menubar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="popUpWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="558.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.myapp.popUpCreate">
+   <children>
+      <GridPane alignment="CENTER" layoutX="11.0" layoutY="189.0" prefHeight="370.0" prefWidth="530.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="237.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="51.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="242.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="99.0" text="Last Name*" GridPane.columnIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label prefHeight="17.0" prefWidth="99.0" text="Country*" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label prefHeight="17.0" prefWidth="99.0" text="City*" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="L_NS" prefHeight="25.0" prefWidth="195.0" promptText="Charles" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="F_NS" prefHeight="25.0" prefWidth="195.0" promptText="Bob" GridPane.rowIndex="1" />
+            <MenuButton fx:id="countryS" mnemonicParsing="false" prefHeight="25.0" prefWidth="268.0" text="Select" GridPane.rowIndex="7">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="France" />
+                  <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="Germany" />
+                  <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="Greece" />
+                  <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="Russia" />
+                <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="UK" />
+                  <MenuItem mnemonicParsing="false" onAction="#countrySelect" text="USA" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="genderS" mnemonicParsing="false" prefHeight="25.0" prefWidth="285.0" text="Select" GridPane.rowIndex="5">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#genderSelect" text="Male" />
+                  <MenuItem mnemonicParsing="false" onAction="#genderSelect" text="Female" />
+                  <MenuItem mnemonicParsing="false" onAction="#genderSelect" text="Other" />
+               </items>
+            </MenuButton>
+            <Label prefHeight="20.0" prefWidth="114.0" text="First Name*">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="EmailS" prefHeight="25.0" prefWidth="195.0" promptText="xxxxx@gmail.com" GridPane.rowIndex="3" />
+            <TextField fx:id="PhoneS" prefHeight="25.0" prefWidth="195.0" promptText="69XXXXXXXX" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label prefHeight="20.0" prefWidth="114.0" text="Email*" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="114.0" text="Phone Number*" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="99.0" text="Gender*" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="99.0" text="Age*" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="99.0" text="Password*" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="137.0" text="Repeat Password*" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="PasswordS" prefHeight="25.0" prefWidth="195.0" promptText="***********" GridPane.rowIndex="9" />
+            <PasswordField fx:id="passwordRS" prefHeight="25.0" prefWidth="195.0" promptText="***********" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <TextField fx:id="CityS" prefHeight="25.0" prefWidth="195.0" promptText="Athens e.g" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <DatePicker fx:id="AgeS" prefHeight="25.0" prefWidth="257.0" promptText="XX/XX/XXXX" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <VBox layoutX="11.0" layoutY="111.0" prefHeight="94.0" prefWidth="530.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="82.0" text="Username*">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="UsernameS" promptText="Assembler2001" />
+         </children>
+      </VBox>
+      <GridPane layoutX="11.0" layoutY="607.0" prefHeight="41.0" prefWidth="530.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="203.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="46.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="203.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="cancelB" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="230.0" text="Cancel">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="addB" mnemonicParsing="false" onAction="#registerButton" prefHeight="35.0" prefWidth="230.0" text="Register" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <Pane layoutX="1.0" prefHeight="25.0" prefWidth="558.0">
+         <children>
+            <Button fx:id="popUpExitB" layoutX="512.0" layoutY="13.0" mnemonicParsing="false" onAction="#exit" prefHeight="17.0" prefWidth="32.0">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-close-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="7.0" layoutY="8.0" prefHeight="35.0" prefWidth="215.0" text="Sign Up">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="photoS" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="220.0" layoutY="25.0" maxHeight="86.0" maxWidth="99.0" minHeight="111.0" minWidth="114.0" mnemonicParsing="false" onAction="#photoSelect" prefHeight="111.0" prefWidth="114.0">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../popImage.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="popUpWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="470.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.myapp.popUpFilterController">
+   <children>
+      <Pane layoutX="1.0" prefHeight="42.0" prefWidth="450.0">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" prefHeight="15.0" prefWidth="215.0" text="Apply filter">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane layoutX="1.0" layoutY="249.0" prefHeight="42.0" prefWidth="470.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="saveB" mnemonicParsing="false" onAction="#apply" prefHeight="25.0" prefWidth="99.0" text="Apply" GridPane.columnIndex="1" />
+            <Button fx:id="cancelB" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="99.0" text="Cancel" />
+         </children>
+      </GridPane>
+      <Pane fx:id="paneF" layoutX="1.0" layoutY="48.0" prefHeight="97.0" prefWidth="468.0">
+         <children>
+            <GridPane layoutX="17.0" layoutY="1.0" prefHeight="82.0" prefWidth="437.0">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="122.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="395.0" minWidth="0.0" prefWidth="122.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="96.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="115.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="34.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="28.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="easyB" mnemonicParsing="false" prefHeight="23.0" prefWidth="70.0" text="Easy" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="mediumB" mnemonicParsing="false" prefHeight="33.0" prefWidth="94.0" text="Medium" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="hardB" mnemonicParsing="false" text="Hard" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label text="Difficulty" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Calories">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <MenuButton fx:id="menuC" mnemonicParsing="false" prefHeight="32.0" prefWidth="67.0" text="750" GridPane.rowIndex="1">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="250" />
+                      <MenuItem mnemonicParsing="false" text="350" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane layoutX="-1.0" layoutY="145.0" prefHeight="104.0" prefWidth="470.0">
+         <children>
+            <GridPane fx:id="paneF1" layoutX="6.0" layoutY="-13.0" prefHeight="118.0" prefWidth="460.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="217.0" minWidth="0.0" prefWidth="101.0" />
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="80.0" />
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="82.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="368.0" minWidth="10.0" prefWidth="106.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="39.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="20.0" prefWidth="69.0" text="Categories">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ToggleButton fx:id="dessertB" mnemonicParsing="false" prefHeight="28.0" prefWidth="89.0" text="Dessert" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-dessert-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="breakfastB" mnemonicParsing="false" prefHeight="28.0" prefWidth="96.0" text="Breakfast" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-simple-breakfast-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="lunchB" mnemonicParsing="false" prefHeight="28.0" prefWidth="76.0" text="Lunch" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-lunch-48.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="dinnerB" mnemonicParsing="false" prefHeight="28.0" prefWidth="88.0" text="Dinner" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-dinner-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="saladB" mnemonicParsing="false" prefHeight="28.0" prefWidth="79.0" text="Salad" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-salad-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="appetizerB" mnemonicParsing="false" prefHeight="28.0" prefWidth="104.0" text="Appetizer" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-appetizer-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Button fx:id="popUpExitB" layoutX="433.0" layoutY="9.0" mnemonicParsing="false" onAction="#exit" prefHeight="17.0" prefWidth="32.0">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-close-60.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="popUpWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.myapp.popUpEditController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="11.0" layoutY="215.0" prefHeight="166.0" prefWidth="428.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="203.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="46.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="203.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="99.0" text="Calories" GridPane.columnIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label prefHeight="17.0" prefWidth="99.0" text="Category*" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label prefHeight="17.0" prefWidth="99.0" text="Difficulty*" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="caloriesS" prefHeight="25.0" prefWidth="195.0" promptText="750" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="ingredientCS" prefHeight="25.0" prefWidth="195.0" promptText="6" GridPane.rowIndex="1" />
+            <MenuButton fx:id="categoryS" mnemonicParsing="false" prefHeight="25.0" prefWidth="207.0" text="Select" GridPane.rowIndex="3">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#categorySelect" text="Dessert" />
+                  <MenuItem mnemonicParsing="false" onAction="#categorySelect" text="Breakfast" />
+                  <MenuItem mnemonicParsing="false" onAction="#categorySelect" text="Lunch" />
+                  <MenuItem mnemonicParsing="false" onAction="#categorySelect" text="Salad" />
+                  <MenuItem mnemonicParsing="false" onAction="#categorySelect" text="Appetizer" />
+                  <MenuItem mnemonicParsing="false" onAction="#categorySelect" text="Dinner" />
+              </items>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-category-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="difficultyS" mnemonicParsing="false" prefHeight="25.0" prefWidth="207.0" text="Select" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#difficultySelect" text="Easy" />
+                  <MenuItem mnemonicParsing="false" onAction="#difficultySelect" text="Medium" />
+                  <MenuItem mnemonicParsing="false" onAction="#difficultySelect" text="Hard" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-speedometer-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <Label prefHeight="20.0" prefWidth="114.0" text="Ingredient count*">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </GridPane>
+      <VBox layoutX="11.0" layoutY="110.0" prefHeight="94.0" prefWidth="428.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="82.0" text="Name*">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="nameS" promptText="Name of recipe" />
+         </children>
+      </VBox>
+      <VBox layoutX="11.0" layoutY="357.0" prefHeight="111.0" prefWidth="428.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="84.0" text="Description*">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="descriptionS" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="441.0" promptText="  Steps for the recipe" />
+         </children>
+      </VBox>
+      <GridPane layoutX="12.0" layoutY="481.0" prefHeight="37.0" prefWidth="422.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="203.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="46.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="203.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="cancelB" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="230.0" text="Cancel">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="saveB" mnemonicParsing="false" onAction="#save" prefHeight="35.0" prefWidth="230.0" text="Save" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <Pane layoutX="1.0" prefHeight="25.0" prefWidth="450.0">
+         <children>
+            <Button fx:id="popUpExitB" layoutX="410.0" layoutY="13.0" mnemonicParsing="false" onAction="#exit" prefHeight="17.0" prefWidth="32.0">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-close-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="7.0" layoutY="8.0" prefHeight="35.0" prefWidth="215.0" text="Edit recipe">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="photoS" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="175.0" layoutY="32.0" maxHeight="86.0" maxWidth="99.0" minHeight="111.0" minWidth="114.0" mnemonicParsing="false" onAction="#photoSelect" prefHeight="111.0" prefWidth="114.0" />
+   </children>
+</AnchorPane>
