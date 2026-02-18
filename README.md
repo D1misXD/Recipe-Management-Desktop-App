@@ -5,8 +5,8 @@ Built as a university project to demonstrate full-stack Java desktop development
 
 ⭐ **Features**
 - **User Accounts** — Registration, login, session management
-- **Personalized Profiles** — Each user has their own private recipe collection
-- **Recipe CRUD** — Create, read, update, delete recipes with full database support
+- **Personalized Profiles** — Each user has their own private recipe collection using OOP
+- **Recipe CRUD** — Create, read, update, delete recipes with full database support using OOP
 - **Search & Filter** — Find recipes by title, ingredients, category, etc.
 - **Modern GUI** — Responsive interface built with JavaFX + Scene Builder + CSS
 - **Database Backend** — MySQL for persistent storage
