@@ -1,7 +1,7 @@
 🧾 **Recipe-Management-Desktop-App**
 A desktop application for creating, managing, and organizing personal recipes with multi-user support.
 
-Built as a university project to demonstrate full-stack Java desktop development skills: **JavaFX**,**CSS** and **SceneBuilder** for GUI, **MySQL** database integration, **CRUD** operations, user authentication, and personalized data handling.
+Built as a university project to demonstrate full-stack Java desktop development skills: **Java**,**JavaFX**,**OOP**,**CSS** and **SceneBuilder** for GUI, **MySQL** database integration, **CRUD** operations, user authentication, and personalized data handling.
 
 ⭐ **Features**
 - **User Accounts** — Registration, login, session management
